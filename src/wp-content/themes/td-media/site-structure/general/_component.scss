@@ -1,0 +1,125 @@
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.picture-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.bg-img {
+  position: relative;
+  width: 100%;
+  &::after {
+    display: block;
+    padding-top: 100%;
+    content: " ";
+  }
+}
+.text-shadow {
+  text-shadow: $text-shadow;
+}
+.card-service {
+}
+
+//form contact
+#form-contact {
+  input {
+    background-color: transparent !important;
+    width: 100%;
+    font-size: 18px !important;
+    color: $color-white;
+    outline: none !important;
+  }
+  textarea {
+    background-color: transparent !important;
+    width: 100%;
+    font-size: 18px !important;
+    outline: none !important;
+    color: $color-white;
+  }
+}
+
+.map {
+  iframe {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+.card-news {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  .card-news-img {
+    overflow: hidden;
+  }
+  img {
+    @include transition;
+  }
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+}
+.card-news-2 {
+  width: 100%;
+  .card-news-img {
+    overflow: hidden;
+  }
+  .card-news-info {
+    height: 100%;
+  }
+  img {
+    @include transition;
+  }
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.card-solution {
+  @include desktop {
+    min-height: 400px;
+  }
+  @include transition;
+  cursor: pointer;
+  .title {
+    text-align: center;
+  }
+  .description {
+    padding-top: 10px;
+    @include desktop {
+      padding-top: 20px;
+    }
+    @include tablet {
+      padding-top: 15px;
+    }
+    overflow: hidden;
+    width: 100%;
+    @include transition;
+    height: 0;
+  }
+  .image {
+    overflow: hidden;
+  }
+  img {
+    @include transition;
+  }
+  &:hover {
+    .description {
+      height: 120px;
+    }
+    img {
+      transform: scale(1.1);
+    }
+  }
+}
