@@ -1,9 +1,5 @@
 <main id="page">
-    <div class="container-fluid p-0">
-        <div class="row no-gutters">
-            <div class="col">
-                <?php the_content(); ?>
-            </div>
-        </div>
+    <div class="app">
+        <?php the_content(); ?>
     </div>
 </main>

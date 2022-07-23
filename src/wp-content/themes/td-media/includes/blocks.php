@@ -44,5 +44,47 @@ function shin_acf_init_block_types()
                 'keywords'          => array('core', 'space', 'homepage'),
                 'mode'              => 'edit', // auto, preview, edit
             ));
+
+            // About page block
+            acf_register_block_type(array(
+                'name'              => 'About section banner',
+                'title'             => __('about section 1'),
+                'description'       => __('A custom about block.'),
+                'render_template'   => 'site-structure/blocks/about/about-ss1/index.php',
+                'category'          => 'shin-blocks',
+                'icon'              => 'admin-customizer',
+                'keywords'          => array('core', 'space', 'about'),
+                'mode'              => 'edit', // auto, preview, edit
+            ));
+            acf_register_block_type(array(
+                'name'              => 'About section 2',
+                'title'             => __('about section 2'),
+                'description'       => __('A custom about block.'),
+                'render_template'   => 'site-structure/blocks/about/about-ss2/index.php',
+                'category'          => 'shin-blocks',
+                'icon'              => 'admin-customizer',
+                'keywords'          => array('core', 'space', 'about'),
+                'mode'              => 'edit', // auto, preview, edit
+            ));
+            acf_register_block_type(array(
+                'name'              => 'About section 3',
+                'title'             => __('about section 3'),
+                'description'       => __('A custom about block.'),
+                'render_template'   => 'site-structure/blocks/about/about-ss3/index.php',
+                'category'          => 'shin-blocks',
+                'icon'              => 'admin-customizer',
+                'keywords'          => array('core', 'space', 'about'),
+                'mode'              => 'edit', // auto, preview, edit
+            ));
+            acf_register_block_type(array(
+                'name'              => 'About section 4',
+                'title'             => __('about section 4'),
+                'description'       => __('A custom about block.'),
+                'render_template'   => 'site-structure/blocks/about/about-ss4/index.php',
+                'category'          => 'shin-blocks',
+                'icon'              => 'admin-customizer',
+                'keywords'          => array('core', 'space', 'about'),
+                'mode'              => 'edit', // auto, preview, edit
+            ));
     }
 }

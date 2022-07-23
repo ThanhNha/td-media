@@ -1,4 +1,4 @@
-<section class="lg:py-[300px] md:py-[240px] py-[400px] relative">
+<section class="lg:py-[300px] md:py-[240px] py-[400px] relative " id="home-section">
     <div class="overlay bg-top bg-no-repeat bg-cover -z-10" style="background-image: url(&quot;<?php
             if ( get_field('background') ) {
                the_field('background');
@@ -8,8 +8,8 @@
     </div>
     <div class="container">
         <div class=" lg:p-12 md:p-10 p-5">
-            <div class="text-center font-bold uppercase text-white h1 fade-left">
-                Truyền thông TD
+            <div class="text-center font-bold uppercase text-white  fade-left typewriter">
+                <h1 class="h1">Truyền thông TD</h1>
             </div>
             <div class="h2 text-center font-bold text-white">Nhà định hình phong cách thương hiệu chuyên nghiệp
             </div>

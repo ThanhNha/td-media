@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title><?php wp_title('| ', true, 'right');?></title>
     <?php wp_head(); ?>
-    <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="all" />
+    <!-- <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="all" /> -->
 </head>
 
 <body <?php body_class(); ?>>

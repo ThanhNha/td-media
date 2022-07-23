@@ -5,8 +5,17 @@
 add_action( 'admin_init', 'register_editor_stylesheet' );
 function register_editor_stylesheet() {
     add_editor_style( 'assets/main/main.css' );
-    add_editor_style( 'style.css' );
+    // add_editor_style( 'style.css' );
 }
+// add_action( 'admin_init2', 'register_editor_stylesheet2' );
+// function register_editor_stylesheet2() {
+//     // add_editor_style( 'assets/main/main.css' );
+//     add_editor_style( 'style.css' );
+// }
+function my_custom_styles() {        
+    wp_enqueue_style( 'my-custom-style', get_template_directory_uri() . '/style.css');
+}
+add_action( 'wp_enqueue_scripts', 'my_custom_styles' );
 
 
 /*
