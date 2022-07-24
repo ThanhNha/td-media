@@ -1,6 +1,8 @@
-.outside{
-    margin-left: -15px;
-    margin-right: -15px;
-    overflow: hidden;
+.outside {
+  margin-left: -15px;
+  margin-right: -15px;
+  overflow: hidden;
 }
-
+html.open-menu {
+  overflow: hidden;
+}

@@ -20,10 +20,11 @@ function header() {
 
   const hamburger = $("#hamburger-menu");
   const body = $("body");
+  const html = $("html");
   const overlay = $("#overlay");
 
   hamburger.click(() => {
-    body.toggleClass("open-menu");
+    html.toggleClass("open-menu");
   });
 
   let has_sub = $(".has-sub");
@@ -33,7 +34,7 @@ function header() {
     sub.toggleClass("open-sub");
   });
   overlay.click(() => {
-    body.removeClass("open-menu");
+    html.removeClass("open-menu");
   });
   $(document).on("click", function (e) {
     if ($(e.target).closest("#sidebar").length === 0) {

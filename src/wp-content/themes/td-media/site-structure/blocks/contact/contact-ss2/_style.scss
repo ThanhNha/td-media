@@ -1,0 +1,23 @@
+//form contact
+#form-contact {
+  input {
+    color: rgb(230, 230, 230);
+    margin-top: 10px;
+    padding: 20px 10px;
+    background-image: $color-radial-1 !important;
+    width: 100%;
+    font-size: 18px !important;
+    // color: $color-white;
+    outline: none !important;
+  }
+  textarea {
+    color: rgb(230, 230, 230);
+    margin-top: 10px;
+    padding: 20px 10px;
+    background-image: $color-radial-1 !important;
+    width: 100%;
+    font-size: 18px !important;
+    outline: none !important;
+    // color: $color-white;
+  }
+}

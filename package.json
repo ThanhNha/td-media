@@ -5,7 +5,8 @@
   "scripts": {
     "gulp-sass": "gulp sass",
     "gulp-js": "gulp js",
-    "watch": "gulp"
+    "watch": "gulp",
+    "dev":"npx tailwindcss -i ./src/wp-content/themes/td-media/tailwind.css -o ./src/wp-content/themes/td-media/style.css --watch"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.5",

@@ -1,5 +1,6 @@
 @import "mixins";
 @import "keyframes";
+@import "general";
 
 @import "fonts";
 @import "variables";
@@ -14,6 +15,12 @@
 
 // Style css section
 @import "../../site-structure/blocks/homepage/blockOne/style";
+
+@import "../../site-structure/blocks/network/network-ss1/style";
+
+@import "../../site-structure/blocks/contact/contact-ss2/style";
+
+@import "../../site-structure/blocks/recruit/recruit-ss3/style";
 
 @import "../../site-structure/header/style";
 @import "../../site-structure/footer/style";

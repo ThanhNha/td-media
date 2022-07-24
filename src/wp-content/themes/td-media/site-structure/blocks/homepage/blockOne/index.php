@@ -8,7 +8,7 @@
     </div>
     <div class="container">
         <div class=" lg:p-12 md:p-10 p-5">
-            <div class="text-center font-bold uppercase text-white  fade-left typewriter">
+            <div class="text-center font-bold uppercase text-white typewriter">
                 <h1 class="h1">Truyền thông TD</h1>
             </div>
             <div class="h2 text-center font-bold text-white">Nhà định hình phong cách thương hiệu chuyên nghiệp
