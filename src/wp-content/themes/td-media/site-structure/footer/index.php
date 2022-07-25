@@ -9,7 +9,7 @@
             ?>&quot;);">
         </div>
         <div class="main-footer">
-            <div class=" grid grid-cols-12 lg:gap-[50px] md:gap-[35px] gap-[25px]">
+            <div class="w-full grid grid-cols-12 lg:gap-[50px] md:gap-[35px] gap-[25px]">
                 <div class="lg:col-span-7 col-span-12">
                     <div class="grid grid-cols-12 lg:gap-[50px] md:gap-[35px] gap-[25px]">
                         <div class="md:col-span-6 col-span-12">
@@ -18,7 +18,7 @@
                                 if ( get_field('footer_logo','option') ) {
                                     $attachment_id = get_field('footer_logo','option');
                                     $size = "full"; // (thumbnail, medium, large, full or custom size)
-                                    $class = "lg:picture-cover lg:object-contain";
+                                    $class = "picture-cover object-cover";
                                    echo wp_get_attachment_image( $attachment_id, $size,false , array('class' =>  $class) );
                                 }
                                 ?>

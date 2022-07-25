@@ -27,91 +27,55 @@
     <div class="sidebar-main relative lg:px-10 md:px-7 px-5 h-full flex flex-col items-start justify-center z-10">
         <div class="h-[70%] flex items-end ">
             <ul class="menu-items w-full overflow-hidden flex flex-col">
-                <li class="group flex items-center relative overflow-hidden active">
+                <?php if ( have_rows('menu_main','option') ) : ?>
+                <?php while( have_rows('menu_main','option') ) : the_row();
+                $menu_name = get_sub_field('menu_name');
+                $menu_link = get_sub_field('menu_link');
+                ?>
+                <li
+                    class="group flex items-center relative overflow-hidden  <?php if(get_permalink()== $menu_link){echo 'active';}  if( have_rows('sub_menu' ,'option') ){echo 'has-sub';} ?>">
                     <div class="icon-menu lg:h-[35px] h-[30px] flex space-x-2 duration-500">
                         <div class="icon-1 w-[7px] h-full bg-pink"></div>
                         <div class="icon-1 w-[15px] h-full bg-pink"></div>
                     </div>
                     <a class=" group-hover:pl-[35px] block h2 uppercase font-bold group-hover:text-white duration-500"
-                        href="index.html">Trang chủ</a>
-                </li>
-                <li class="group flex items-center relative overflow-hidden">
-                    <div class="icon-menu lg:h-[35px] h-[30px] flex space-x-2 duration-500">
-                        <div class="icon-1 w-[7px] h-full bg-pink"></div>
-                        <div class="icon-1 w-[15px] h-full bg-pink"></div>
-                    </div>
-                    <a class=" group-hover:pl-[35px] block h2 uppercase font-bold group-hover:text-white duration-500"
-                        href="about.html">Giới thiệu</a>
-                </li>
-                <li class="group flex items-center relative overflow-hidden">
-                    <div class="icon-menu lg:h-[35px] h-[30px] flex space-x-2 duration-500">
-                        <div class="icon-1 w-[7px] h-full bg-pink"></div>
-                        <div class="icon-1 w-[15px] h-full bg-pink"></div>
-                    </div>
-                    <a class=" group-hover:pl-[35px] block h2 uppercase font-bold group-hover:text-white duration-500"
-                        href="solution.html">Giải pháp</a>
-                </li>
-                <li class="group flex items-center relative overflow-hidden">
-                    <div class="icon-menu lg:h-[35px] h-[30px] flex space-x-2 duration-500">
-                        <div class="icon-1 w-[7px] h-full bg-pink"></div>
-                        <div class="icon-1 w-[15px] h-full bg-pink"></div>
-                    </div>
-                    <a class=" group-hover:pl-[35px] block h2 uppercase font-bold group-hover:text-white duration-500"
-                        href="news.html">Tin tức</a>
-                </li>
-                <li class="group flex items-center relative overflow-hidden">
-                    <div class="icon-menu lg:h-[35px] h-[30px] flex space-x-2 duration-500">
-                        <div class="icon-1 w-[7px] h-full bg-pink"></div>
-                        <div class="icon-1 w-[15px] h-full bg-pink"></div>
-                    </div>
-                    <a class=" group-hover:pl-[35px] block h2 uppercase font-bold group-hover:text-white duration-500"
-                        href="recruit.html">Tuyển dụng</a>
-                </li>
-                <li class="group flex items-center relative overflow-hidden">
-                    <div class="icon-menu lg:h-[35px] h-[30px] flex space-x-2 duration-500">
-                        <div class="icon-1 w-[7px] h-full bg-pink"></div>
-                        <div class="icon-1 w-[15px] h-full bg-pink"></div>
-                    </div>
-                    <a class=" group-hover:pl-[35px] block h2 uppercase font-bold group-hover:text-white duration-500"
-                        href="network.html">Mạng lưới liên kết</a>
-                </li>
-                <li class="group flex items-center relative overflow-hidden">
-                    <div class="icon-menu lg:h-[35px] h-[30px] flex space-x-2 duration-500">
-                        <div class="icon-1 w-[7px] h-full bg-pink"></div>
-                        <div class="icon-1 w-[15px] h-full bg-pink"></div>
-                    </div>
-                    <a class=" group-hover:pl-[35px] block h2 uppercase font-bold group-hover:text-white duration-500"
-                        href="contact.html">Liên hệ</a>
+                        href="<?php echo $menu_link;?>"> <?php echo $menu_name;?></a>
                 </li>
 
+                <?php endwhile; ?>
+
+                <?php endif; ?>
             </ul>
         </div>
         <!-- menu bottom here -->
         <div class="h-[30%] w-full overflow-hidden relative">
             <!-- sub menu -->
+            <?php if( have_rows('sub_menu' ,'option') ): ?>
+
             <div class="sub-menu-wrapper ">
                 <div class="flex flex-col space-y-4 justify-end items-end lg:w-[90%] md:w-[85%] w-full">
                     <span class="h2 font-bold uppercase">Service</span>
                     <ul class="sub-menu w-full overflow-hidden flex flex-col items-end lg:space-y-4 space-y-2">
+                        <?php while( have_rows('sub_menu','option') ): the_row(); 
+                        $sub_name = get_sub_field('sub_name');
+                        $sub_link = get_sub_field('sub_link');
+                    ?>
                         <li class="group flex items-center relative overflow-hidden active">
                             <a class="group-hover:pr-[35px] block h3 uppercase font-bold group-hover:text-white duration-500"
-                                href="#">Service 1 2 3</a>
+                                href="<?php echo  $sub_link?>">
+                                <?php echo   $sub_name?>
+                            </a>
                             <div class="icon-menu lg:h-[30px] h-[25px] flex space-x-2 duration-500">
                                 <div class="icon-1 w-[7px] h-full bg-pink"></div>
                                 <div class="icon-1 w-[15px] h-full bg-pink"></div>
                             </div>
                         </li>
-                        <li class="group flex items-center relative overflow-hidden">
-                            <a class="group-hover:pr-[35px] block h3 uppercase font-bold group-hover:text-white duration-500"
-                                href="#">Service 1 2 3</a>
-                            <div class="icon-menu lg:h-[30px] h-[25px] flex space-x-2 duration-500">
-                                <div class="icon-1 w-[7px] h-full bg-pink"></div>
-                                <div class="icon-1 w-[15px] h-full bg-pink"></div>
-                            </div>
-                        </li>
+                        <?php endwhile;?>
                     </ul>
                 </div>
             </div>
+
+            <?php endif; ?>
             <div class="copyright absolute left-[0%] bottom-[15%]">
                 <div class="flex flex-col space-x-2">
                     <span class="p1">Text here</span>

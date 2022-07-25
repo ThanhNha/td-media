@@ -19,7 +19,7 @@
                             </div>
                             <div class="text-white">
                                 <h2 class="uppercase font-bold h2">
-                                    Sang tao noi dung
+                                    Sáng tạo nội dung
                                 </h2>
                             </div>
                         </div>

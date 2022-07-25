@@ -53,11 +53,15 @@
 }
 
 .card-news {
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   .card-news-img {
     overflow: hidden;
+  }
+  .card-news-info {
+    height: 100%;
   }
   img {
     @include transition;
@@ -69,6 +73,7 @@
   }
 }
 .card-news-2 {
+  height: 100%;
   width: 100%;
   .card-news-img {
     overflow: hidden;

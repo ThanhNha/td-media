@@ -29,9 +29,12 @@ function header() {
 
   let has_sub = $(".has-sub");
   let sub = $(".sub-menu-wrapper");
-  has_sub.click((e) => {
-    e.preventDefault();
-    sub.toggleClass("open-sub");
+  has_sub.each(function (index) {
+    has_sub.eq(index).on("click", function (e) {
+      e.preventDefault();
+      sub.removeClass("open-sub");
+      sub.eq(index).toggleClass("open-sub");
+    });
   });
   overlay.click(() => {
     html.removeClass("open-menu");

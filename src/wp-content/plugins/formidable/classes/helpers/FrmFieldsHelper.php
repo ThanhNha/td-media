@@ -1347,6 +1347,10 @@ class FrmFieldsHelper {
 			$replace_with[] = '[' . $new . ']';
 			$replace[]      = '[' . $old . ' ';
 			$replace_with[] = '[' . $new . ' ';
+			$replace[]      = 'field_id="' . $old . '"';
+			$replace_with[] = 'field_id="' . $new . '"';
+			$replace[]      = 'field_id=\"' . $old . '\"';
+			$replace_with[] = 'field_id=\"' . $new . '\"';
 			unset( $old, $new );
 		}
 		if ( is_array( $val ) ) {
@@ -1839,7 +1843,9 @@ class FrmFieldsHelper {
 
 	/**
 	 * @since 4.04
+	 *
 	 * @param array $args
+	 * @return void
 	 */
 	public static function show_add_field_buttons( $args ) {
 		$field_key    = $args['field_key'];

@@ -3,6 +3,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( 'You are not allowed to call this page directly.' );
 }
 
+/** @phpstan-consistent-constructor */
 class FrmAddon {
 	public $store_url = 'https://formidableforms.com';
 	public $download_id;
@@ -37,7 +38,7 @@ class FrmAddon {
 
 	public static function load_hooks() {
 		add_filter( 'frm_include_addon_page', '__return_true' );
-		//new static();
+		new static();
 	}
 
 	public function insert_installed_addon( $plugins ) {
@@ -281,6 +282,9 @@ class FrmAddon {
 		$api->reset_cached();
 
 		$api = new FrmFormTemplateApi( $this->license );
+		$api->reset_cached();
+
+		$api = new FrmApplicationApi( $this->license );
 		$api->reset_cached();
 	}
 
