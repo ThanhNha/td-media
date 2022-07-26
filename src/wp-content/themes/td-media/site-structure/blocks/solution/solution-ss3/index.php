@@ -9,7 +9,7 @@
 
         <!-- Solution -->
         <div class="lg:pt-12 md:pt-10 pt-8">
-            <div class="flex flex-col lg:space-y-8 space-y-4">
+            <div class="flex flex-col lg:space-y-8 space-y-4 overflow-hidden">
                 <div class="flex-1 fade-right">
                     <div class="grid grid-cols-2">
                         <div class="lg:col-start-2 lg:col-span-1 col-span-full flex space-x-3">
@@ -66,7 +66,7 @@
         </div>
 
         <div class="lg:pt-[200px] md:pt-[140px] pt-[100px]">
-            <div class="flex flex-col lg:space-y-8 space-y-4">
+            <div class="flex flex-col lg:space-y-8 space-y-4 overflow-hidden">
                 <div class="flex-1 fade-right">
                     <div class="flex justify-center">
                         <div class="col-span-full flex space-x-3">

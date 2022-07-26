@@ -6,7 +6,7 @@
     </div>
     <div class="container z-10 relative">
         <div class="lg:pt-8 md:pt-6 pt-4">
-            <div class="flex flex-col lg:space-y-8 space-y-4">
+            <div class="flex flex-col lg:space-y-8 space-y-4 overflow-hidden">
                 <div class="flex-1 fade-left">
                     <div class="grid grid-cols-5">
                         <div class="col-start-2 col-span-3 flex space-x-3">
@@ -64,7 +64,7 @@
 
         <!-- Network 2 -->
         <div class="lg:pt-8 md:pt-6 pt-4">
-            <div class="flex flex-col lg:space-y-8 space-y-4">
+            <div class="flex flex-col lg:space-y-8 space-y-4 overflow-hidden">
                 <div class="flex-1 fade-right">
                     <div class="grid grid-cols-5">
                         <div
@@ -121,7 +121,7 @@
 
         <!-- Network 3 -->
         <div class="lg:pt-8 md:pt-6 pt-4">
-            <div class="flex flex-col lg:space-y-8 space-y-4">
+            <div class="flex flex-col lg:space-y-8 space-y-4 overflow-hidden">
                 <div class="flex-1 fade-left">
                     <div class="grid grid-cols-5">
                         <div class="col-start-2 col-span-3 flex space-x-3">

@@ -10,7 +10,7 @@
 
     </div>
     <div class="absolute bottom-10 lg:w-1/2 md:w-2/3 w-full left-1/2 -translate-x-1/2">
-        <div class="flex flex-col lg:space-y-4 md:space-y-3 space-y-2 text-center">
+        <div class="flex flex-col lg:space-y-4 md:space-y-3 space-y-2 text-center overflow-x-hidden">
             <h3 class="block h3 fade-left"><?php if ( get_field('description') ) : ?>
                 <?php echo get_field('description'); ?>
                 <?php endif; ?>

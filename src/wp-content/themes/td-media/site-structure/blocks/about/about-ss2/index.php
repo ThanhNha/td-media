@@ -10,7 +10,7 @@
             <div class="grid grid-cols-10 lg:gap-y-[50px] md:gap-y-[35px] gap-y-[25px]">
 
                 <div class="lg:col-span-4 col-span-full">
-                    <div class="flex flex-col md:space-y-5 space-y-3">
+                    <div class="flex flex-col md:space-y-5 space-y-3 overflow-x-hidden">
                         <div class="flex-1 fade-left">
                             <div class="flex space-x-3">
                                 <div class="flex items-center space-x-2 w-[50px] full">
@@ -65,7 +65,7 @@
                     </div>
                 </div>
                 <div class="lg:col-span-4 col-span-full">
-                    <div class="flex flex-col md:space-y-5 space-y-3">
+                    <div class="flex flex-col md:space-y-5 space-y-3 overflow-x-hidden">
                         <div class="flex-1 fade-right">
                             <div class="flex space-x-3">
                                 <div class="flex items-center space-x-2 w-[50px] full">

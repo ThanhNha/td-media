@@ -1,5 +1,8 @@
 /*!
 Theme Name: TD MEDIA
+Author: Shin 
+Author URI: https://www.facebook.com/nhathanh024/
+Version: 1.0.0
 */
 
 /*! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com
@@ -679,14 +682,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1rem;
 }
 
+.my-\[24px\] {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .mx-2 {
@@ -694,9 +697,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0.5rem;
 }
 
-.my-\[24px\] {
-  margin-top: 24px;
-  margin-bottom: 24px;
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mb-4 {
@@ -817,6 +820,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 25px;
 }
 
+.h-\[1px\] {
+  height: 1px;
+}
+
 .h-\[900px\] {
   height: 900px;
 }
@@ -829,8 +836,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 150px;
 }
 
-.h-\[1px\] {
-  height: 1px;
+.h-\[1200px\] {
+  height: 1200px;
 }
 
 .min-h-\[35px\] {
@@ -845,12 +852,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: 500px;
 }
 
-.w-\[50px\] {
-  width: 50px;
-}
-
 .w-full {
   width: 100%;
+}
+
+.w-\[50px\] {
+  width: 50px;
 }
 
 .w-\[35\%\] {
@@ -1082,6 +1089,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   overflow-x: auto;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -1216,10 +1227,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 400px;
 }
 
-.pb-\[600px\] {
-  padding-bottom: 600px;
-}
-
 .pb-\[50px\] {
   padding-bottom: 50px;
 }
@@ -1236,6 +1243,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 40px;
 }
 
+.pb-\[600px\] {
+  padding-bottom: 600px;
+}
+
 .pt-\[100px\] {
   padding-top: 100px;
 }
@@ -1250,6 +1261,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-justify {
   text-align: justify;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -1277,26 +1293,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.text-gray-700 {
-  --tw-text-opacity: 1;
-  color: rgb(57 60 65 / var(--tw-text-opacity));
-}
-
-.text-gray-100 {
-  --tw-text-opacity: 1;
-  color: rgb(244 245 246 / var(--tw-text-opacity));
-}
-
-.text-gray-400 {
-  --tw-text-opacity: 1;
-  color: rgb(146 152 160 / var(--tw-text-opacity));
-}
-
-.text-violet {
-  --tw-text-opacity: 1;
-  color: rgb(157 70 255 / var(--tw-text-opacity));
 }
 
 .opacity-\[80\%\] {
@@ -1384,14 +1380,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-column: span 4 / span 4;
   }
 
-  .md\:mx-4 {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
   .md\:my-\[34px\] {
     margin-top: 34px;
     margin-bottom: 34px;
+  }
+
+  .md\:mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .md\:mb-\[35px\] {
@@ -1535,8 +1531,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-bottom: 240px;
   }
 
-  .md\:pb-\[800px\] {
-    padding-bottom: 800px;
+  .md\:pb-\[500px\] {
+    padding-bottom: 500px;
   }
 
   .md\:pb-\[70px\] {
@@ -1551,6 +1547,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-top: 1.5rem;
   }
 
+  .md\:pb-\[800px\] {
+    padding-bottom: 800px;
+  }
+
   .md\:pt-10 {
     padding-top: 2.5rem;
   }
@@ -1559,8 +1559,9 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-top: 140px;
   }
 
-  .md\:pb-\[500px\] {
-    padding-bottom: 500px;
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
@@ -1624,11 +1625,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:my-5 {
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
-  }
-
-  .lg\:mx-6 {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
   }
 
   .lg\:mb-\[50px\] {
@@ -1787,11 +1783,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-bottom: calc(2rem * var(--tw-space-y-reverse));
   }
 
-  .lg\:object-contain {
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-
   .lg\:p-8 {
     padding: 2rem;
   }
@@ -1856,6 +1847,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:pt-\[200px\] {
     padding-top: 200px;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 

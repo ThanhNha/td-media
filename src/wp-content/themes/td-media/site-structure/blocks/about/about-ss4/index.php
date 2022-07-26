@@ -1,4 +1,4 @@
-<section class="ab-ss4  relative lg:h-[1700px] md:h-[1200px] h-[900px]">
+<section class="ab-ss4  relative lg:h-[1700px] md:h-[1200px] h-[1200px]">
     <div class="w-full h-full relative md:absolute top-0 left-0 -z-10">
         <?php
        if ( get_field('background') ) {
@@ -12,7 +12,7 @@
     <div class="absolute top-0 left-0 w-full h-full z-10">
         <div class="container">
             <div class=" mx-auto lg:max-w-[740px]">
-                <div class="flex flex-col lg:space-y-6 space-y-4 ">
+                <div class="flex flex-col lg:space-y-6 space-y-4 overflow-hidden ">
                     <div class="flex justify-center space-x-3 lg:pt-16 pt-8 fade-left">
                         <div class="flex items-center space-x-2 w-[50px] full">
                             <div class="bg-pink h-full w-1/4"></div>

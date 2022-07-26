@@ -9,7 +9,7 @@
 
         <!-- Solution -->
         <div class="lg:pt-12 md:pt-10 pt-8">
-            <div class="flex flex-col lg:space-y-8 space-y-4">
+            <div class="flex flex-col lg:space-y-8 space-y-4 overflow-hidden">
                 <div class="flex-1 fade-right">
                     <div class="grid grid-cols-5">
                         <div class="xl:col-start-4 lg:col-start-3 lg:col-span-2 col-span-full flex space-x-3">
@@ -51,7 +51,6 @@
                                     </div>
                                     <div class="description text-white">
                                         <?php the_sub_field('description'); ?>
-
                                     </div>
                                 </div>
                             </div>
