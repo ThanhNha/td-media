@@ -76,4 +76,40 @@ footer {
     margin: 0 !important;
     padding: 0 !important;
   }
+
+  .backtop.show {
+    opacity: 1;
+    pointer-events: all;
+    transform: scale(1);
+  }
+  .backtop {
+    position: fixed;
+    // background: $color-red-500;
+    z-index: 9999;
+    display: inline-block;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    opacity: 0;
+    pointer-events: none;
+    @include transition;
+
+    border-radius: 50px;
+    @include desktop {
+      bottom: 50px;
+
+      right: 55px;
+    }
+
+    i {
+      // color: $color-gray-200;
+      font-size: 20px;
+    }
+  }
 }
